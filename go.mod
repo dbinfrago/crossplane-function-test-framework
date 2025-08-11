@@ -1,7 +1,7 @@
 // SPDX-FileCopyrightText: Copyright DB InfraGO AG and contributors
 // SPDX-License-Identifier: Apache-2.0
 
-module github.com/dsd-dbs/crossplane-function-test-framework
+module github.com/dbinfrago/crossplane-function-test-framework
 
 go 1.23.2
 

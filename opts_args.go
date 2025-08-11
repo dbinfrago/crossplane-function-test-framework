@@ -18,8 +18,8 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
-	"github.com/dsd-dbs/crossplane-function-test-framework/internal/util/maps"
-	"github.com/dsd-dbs/crossplane-function-test-framework/internal/util/yaml"
+	"github.com/dbinfrago/crossplane-function-test-framework/internal/util/maps"
+	"github.com/dbinfrago/crossplane-function-test-framework/internal/util/yaml"
 )
 
 // WithContextValue sets the expected context field to value.
