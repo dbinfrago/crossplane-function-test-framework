@@ -19,7 +19,7 @@ import (
 	"testing"
 
 	"github.com/crossplane/function-sdk-go/logging"
-	fntesting "github.com/dsd-dbs/crossplane-function-test-framework"
+	fntesting "github.com/dbinfrago/crossplane-function-test-framework"
 
 	"github.com/my-group/my-project/function"
 )

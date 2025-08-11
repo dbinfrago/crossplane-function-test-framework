@@ -13,8 +13,8 @@ import (
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	"k8s.io/apimachinery/pkg/runtime"
 
-	"github.com/dsd-dbs/crossplane-function-test-framework/internal/util/maps"
-	"github.com/dsd-dbs/crossplane-function-test-framework/internal/util/yaml"
+	"github.com/dbinfrago/crossplane-function-test-framework/internal/util/maps"
+	"github.com/dbinfrago/crossplane-function-test-framework/internal/util/yaml"
 )
 
 // ResourceModifier modifies a [fnapi.Resource].
