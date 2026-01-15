@@ -88,6 +88,8 @@ type FunctionTest struct {
 	reqCtx context.Context
 	res    *fnapi.RunFunctionResponse
 	err    error
+
+	ignoredDesired []string
 }
 
 func (tc *FunctionTest) generateResponse() (*fnapi.RunFunctionResponse, error) {
@@ -98,6 +100,10 @@ func (tc *FunctionTest) generateResponse() (*fnapi.RunFunctionResponse, error) {
 	}
 	if res.GetDesired() == nil {
 		res.Desired = &fnapi.State{}
+	}
+
+	for _, n := range tc.ignoredDesired {
+		delete(res.GetDesired().GetResources(), n)
 	}
 
 	return res, err
