@@ -164,6 +164,16 @@ func IgnoreDesiredResources(names ...string) TestFunctionOpt {
 	}
 }
 
+// IgnoreDesiredResourcesInResponse removes resources from the functions generated
+// response before comparing the response with the expected desired resources.
+// Use it to ignore desired resources whose existence and content you don't
+// want to verify, e.g. statically generated ones.
+func IgnoreDesiredResourcesInResponse(resourceNames ...string) TestFunctionOpt {
+	return func(tc *FunctionTest) {
+		tc.ignoredDesired = append(tc.ignoredDesired, resourceNames...)
+	}
+}
+
 // ExpectedDesiredResourcesYAML reads all objects from a multi-document YAML and
 // expected them as desired resources from the function.
 //
