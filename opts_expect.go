@@ -6,7 +6,7 @@ package testing
 import (
 	"encoding/json"
 
-	"github.com/crossplane/crossplane-runtime/pkg/meta"
+	"github.com/crossplane/crossplane-runtime/v2/pkg/meta"
 	fnapi "github.com/crossplane/function-sdk-go/proto/v1"
 	"github.com/pkg/errors"
 	"google.golang.org/protobuf/encoding/protojson"
